@@ -88,6 +88,8 @@ $(document).ready(function(){
         });
 
         $(document).on('click', '.overlay-js', function(){
+            $('html').removeClass('no-scroll');
+
             if($(this).parent('.menu-wrapper').length > 0){
                 $(this).fadeOut();
                 $(this).remove();
