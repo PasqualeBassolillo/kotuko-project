@@ -47,10 +47,12 @@ body, a{
     font-weight: 400;
     line-height: 19px;
     letter-spacing: 0px;
+    position: relative;
 
     a{
         color: #252525;
         text-decoration: none;
+
     }
 
     .btn-simple{
@@ -90,13 +92,13 @@ body, a{
         }
     }
 
-    body{
-        > .overlay-js{
-            z-index: 0;
-            height: 100%;
-            max-height: none;
-        }
+    
+    & > .overlay-js{
+        z-index: 9999;
+        height: 100%;
+        max-height: none;
     }
+    
 
     .overlay-js {
         display: none;
@@ -115,6 +117,7 @@ body, a{
     color: $color;
     &:hover {
       background:darken($bg,8%);
+      color: $color;
       transition: all 0.3s ease;
     }
     &:active {
@@ -131,6 +134,7 @@ body, a{
     font-weight: 700;
     line-height: 24px;
     text-align: center;
+    width: -moz-fit-content;
     width: fit-content;
    }
    
@@ -308,6 +312,7 @@ body, a{
                 @media (min-width: $breakpoint-lg){
                     & {
                         display: none;
+                        width: -moz-fit-content;
                         width: fit-content;
                         background: white;
                         margin-top: 0px;
@@ -380,7 +385,7 @@ main#main{
     section.header-section.section-site-a {
         background:{
             size: 278%;
-            image: url(http://localhost/kotuko_project/img/home/section_01/section__b/back_a.jpg), linear-gradient(to bottom, #ffffff, #ffffff3d);
+            image: url(../../../img/home/section_01/section__b/back_a.jpg), linear-gradient(to bottom, #ffffff, #ffffff3d);
             position-x: 82%;
             blend-mode: overlay;
         }
@@ -515,6 +520,7 @@ main#main{
                         }
             
                         .detail-wrapper{
+                            width: -moz-fit-content;
                             width: fit-content;
                             margin: auto;
 
@@ -754,7 +760,7 @@ main#main{
                 }
 
                 &.probiotic-row{
-                    background: url(http://localhost/kotuko_project/img/home/section_02/section__b/probiotic_mobile.jpg);
+                    background: url(../../../img/home/section_02/section__b/probiotic_mobile.jpg);
                     border-top-right-radius: 100px;
                     margin-bottom: 37px;
                     background-size: cover;
@@ -762,7 +768,7 @@ main#main{
 
                     @media (min-width: $breakpoint-lg){
                         &{
-                            background: url(http://localhost/kotuko_project/img/home/section_02/section__b/probiotic.jpg);
+                            background: url(../../../img/home/section_02/section__b/probiotic.jpg);
                             background-size: cover;
                             margin-bottom: 30px;
                         }
@@ -800,14 +806,14 @@ main#main{
                 }
 
                 &.kaleidon-row{
-                    background: url(http://localhost/kotuko_project/img/home/section_02/section__b/kaleidon_mobile.jpg);
+                    background: url(../../../img/home/section_02/section__b/kaleidon_mobile.jpg);
                     border-top-left-radius: 100px;
                     background-size: cover;
                     background-repeat: no-repeat;
 
                     @media (min-width: $breakpoint-lg){
                         &{
-                            background: url(http://localhost/kotuko_project/img/home/section_02/section__b/kaleidon.jpg);
+                            background: url(../../../img/home/section_02/section__b/kaleidon.jpg);
                             background-size: cover;
                             padding-top: 35.5px;
                             padding-bottom: 45px;
@@ -968,19 +974,20 @@ main#main{
                     @media (min-width: $breakpoint-lg){
                         &{
                             padding: 5.4% 33px 3%;
+                            height: -moz-fit-content;
                             height: fit-content;
                         }
                     }
                     
 
                     &.exercise-block{
-                        background: url(http://localhost/kotuko_project/img/home/section_03/section__el/exercise_mobile.jpg);
+                        background: url(../../../img/home/section_03/section__el/exercise_mobile.jpg);
                         background-repeat: no-repeat;
                         background-size: cover;
 
                         @media (min-width: $breakpoint-lg){
                             &{
-                                background: url(http://localhost/kotuko_project/img/home/section_03/section__el/exercise.png);
+                                background: url(../../../img/home/section_03/section__el/exercise.png);
                                 background-size: cover;
                             }
                         }
@@ -988,7 +995,7 @@ main#main{
                     }
 
                     &.probiotic-block{
-                        background: url(http://localhost/kotuko_project/img/home/section_03/section__el/probio_mobile.jpg);
+                        background: url(../../../img/home/section_03/section__el/probio_mobile.jpg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-size: 100%;
@@ -996,7 +1003,7 @@ main#main{
 
                         @media (min-width: $breakpoint-lg){
                             &{
-                                background: url(http://localhost/kotuko_project/img/home/section_03/section__el/probio.png);
+                                background: url(../../../img/home/section_03/section__el/probio.png);
                                 background-size: cover;
                             }
                         }
@@ -1004,7 +1011,7 @@ main#main{
                     }
 
                     &.immune-block{
-                        background: url(http://localhost/kotuko_project/img/home/section_03/section__el/immune_mobile.jpg);
+                        background: url(../../../img/home/section_03/section__el/immune_mobile.jpg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position-x: right;
@@ -1013,7 +1020,7 @@ main#main{
 
                         @media (min-width: $breakpoint-lg){
                             &{
-                                background: url(http://localhost/kotuko_project/img/home/section_03/section__el/immune.png);
+                                background: url(../../../img/home/section_03/section__el/immune.png);
                                 background-size: cover;
                                 padding: 4.4% 33px 3%;
                                 background-position-x: right;
@@ -1097,7 +1104,7 @@ main#main{
         .container{
             position: relative;
             max-width: none;
-            background: url(http://localhost/kotuko_project/img/home/section_04/section__el/worldwide_mobile.jpg);
+            background: url(../../../img/home/section_04/section__el/worldwide_mobile.jpg);
             background-size: cover;
             background-position: center;
             padding: 34px 0 6rem;
@@ -1111,7 +1118,7 @@ main#main{
 
             @media (min-width: $breakpoint-lg){
                 &{
-                    background: url(http://localhost/kotuko_project/img/home/section_04/section__el/worldwide.jpg);
+                    background: url(../../../img/home/section_04/section__el/worldwide.jpg);
                     background-size: cover;
                     background-position: center;
                     padding: 3.5rem 0 7.5rem;
@@ -1252,6 +1259,7 @@ main#main{
 
                             @media(min-width: $breakpoint-lg){
                                 &{
+                                    width: -moz-fit-content;
                                     width: fit-content;
                                     text-align: left;
                                     margin: 0;
@@ -1397,6 +1405,7 @@ main#main{
                 position: absolute;
                 bottom: 28px;
                 right: 6%;
+                width: -moz-fit-content;
                 width: fit-content;
 
                 @media (min-width: 768px){
@@ -1506,6 +1515,7 @@ main#main{
             font-size: 44px;
             font-weight: 700;
             color: $default-blue;
+            cursor: pointer;
         }
     }
 }

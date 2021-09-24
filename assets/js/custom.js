@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     // LAYOUT
         // CUSTOM DROPDOWN
 
@@ -38,21 +37,36 @@ $(document).ready(function(){
             $('.menu-wrapper').css('top', $('#header').height());
             $(window).scroll(function(){
                 
-                    // console.log($('#header').height());
-                    
-                    let prevVal = $('#header').height();
-                    // console.log(prevVal);
-                    setTimeout(function(){
-                        let nextVal = $('#header').height();
-                        // console.log(nextVal);
-                        if(prevVal !== nextVal){
-                            $('.menu-wrapper').css('top', $('#header').height());
-                        }
-                    }, 300)
-
+                // console.log($('#header').height());
                 
+                let prevVal = $('#header').height();
+                // console.log(prevVal);
+                setTimeout(function(){
+                    let nextVal = $('#header').height();
+                    // console.log(nextVal);
+                    if(prevVal !== nextVal){
+                        $('.menu-wrapper').css('top', $('#header').height());
+                    }
+                }, 300)                
             })
+        } else {
+            $('.menu-wrapper').css('top', 0);
         }
+
+        // *** FIX *** IF USE HAMBURGER MOBILE AND RESIZE THE WINDOW TO DESKTOP VIEW THE MENU STAY IN DISPLAY NONE
+
+        $(window).resize(function(){
+            if($(window).width() > 992){
+                if($('.menu-wrapper:visible').length == 0){
+                    $('.menu-wrapper').css('display', 'flex');
+                } 
+            } else {
+                if($('.menu-wrapper:visible').length > 0){
+                    $('.menu-wrapper').css('display', 'none');
+                } 
+                
+            }   
+        })
 
         // HAMBURGER
         var $hamburger = $(".hamburger");
@@ -82,7 +96,7 @@ $(document).ready(function(){
         
 
     // HOMEPAGE
-        // MOVE BUTTON 'ACQUISTA SUBITO FROM TOP TO BOTTOM'
+        // MOVE BUTTON 'ACQUISTA SUBITO' FROM TOP TO BOTTOM
         if($(window).width() < 768){
             $('.button-move-js').insertAfter('main#main section.header-section.section-site-b')
         }
@@ -102,7 +116,7 @@ $(document).ready(function(){
         $('.menu-wrapper .overlay-js').slideUp(); 
         setTimeout(function(){
             $('.modal-section').remove();
-            $('.menu-wrapper .overlay-js').remove();
+            $('.overlay-js').remove();
         }, 300)               
     })
 })
@@ -127,7 +141,7 @@ $('<div/>', {class: 'modal-section'}).append(
             $('<div/>', {class: 'link-wrapper'}).append(
                 $('<a/>', {class: 'modal-link'}).append(
                     $('<span/>', {class: 'modal-icon'}).append(
-                        $('<img/>', {src: 'modal-icon'})
+                        $('<img/>', {src: 'img/home/modal/icons/01.svg'})
                     )
                 ).append(
                     $('<span/>', {class: 'modal-label', text: 'Diarrea'})
@@ -137,7 +151,7 @@ $('<div/>', {class: 'modal-section'}).append(
             $('<div/>', {class: 'link-wrapper'}).append(
                 $('<a/>', {class: 'modal-link'}).append(
                     $('<span/>', {class: 'modal-icon'}).append(
-                        $('<img/>', {src: 'modal-icon'})
+                        $('<img/>', {src: 'img/home/modal/icons/02.svg'})
                     )
                 ).append(
                     $('<span/>', {class: 'modal-label', text: 'Costipazione'})
@@ -147,7 +161,7 @@ $('<div/>', {class: 'modal-section'}).append(
             $('<div/>', {class: 'link-wrapper'}).append(
                 $('<a/>', {class: 'modal-link'}).append(
                     $('<span/>', {class: 'modal-icon'}).append(
-                        $('<img/>', {src: 'modal-icon'})
+                        $('<img/>', {src: 'img/home/modal/icons/03.svg'})
                     )
                 ).append(
                     $('<span/>', {class: 'modal-label', text: 'Vomito'})
@@ -157,7 +171,7 @@ $('<div/>', {class: 'modal-section'}).append(
             $('<div/>', {class: 'link-wrapper'}).append(
                 $('<a/>', {class: 'modal-link'}).append(
                     $('<span/>', {class: 'modal-icon'}).append(
-                        $('<img/>', {src: 'modal-icon'})
+                        $('<img/>', {src: 'img/home/modal/icons/04.svg'})
                     )
                 ).append(
                     $('<span/>', {class: 'modal-label', text: 'Mal di pancia'})
@@ -167,7 +181,7 @@ $('<div/>', {class: 'modal-section'}).append(
             $('<div/>', {class: 'link-wrapper'}).append(
                 $('<a/>', {class: 'modal-link'}).append(
                     $('<span/>', {class: 'modal-icon'}).append(
-                        $('<img/>', {src: 'modal-icon'})
+                        $('<img/>', {src: 'img/home/modal/icons/05.svg'})
                     )
                 ).append(
                     $('<span/>', {class: 'modal-label', text: 'Gonfiore intestinale'})
@@ -177,7 +191,7 @@ $('<div/>', {class: 'modal-section'}).append(
             $('<div/>', {class: 'link-wrapper'}).append(
                 $('<a/>', {class: 'modal-link'}).append(
                     $('<span/>', {class: 'modal-icon'}).append(
-                        $('<img/>', {src: 'modal-icon'})
+                        $('<img/>', {src: 'img/home/modal/icons/06.svg'})
                     )
                 ).append(
                     $('<span/>', {class: 'modal-label', text: 'Irregolarità'})
@@ -195,11 +209,17 @@ $('<div/>', {class: 'modal-section'}).append(
     )
 );
 
+// FUNCTION TO OPEN MODAL
 function openModal(){
     overlayJS.insertAfter('#footer');
     modalJS.insertAfter('#footer');
-    $('.menu-wrapper').slideUp();
-    $(".hamburger").removeClass("is-active");
+
+    if($(window).width() < 992){
+        $('.menu-wrapper').slideUp();
+        $(".hamburger").removeClass("is-active");
+    }
+
+    overlayJS.slideDown();
     setTimeout(function(){
         $('.modal-section').addClass('active');
     }, 200)

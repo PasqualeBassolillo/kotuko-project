@@ -17,10 +17,10 @@
                 <div class="col-6 col-sm-4 col-lg-3 px-1">
                     <div class="product-wrapper">
                         <div class="image-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/01.png">
+                            <img src="img/home/section_01/section__el/01.png">
                         </div>
                         <div class="detail-wrapper">                            
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/logos/01.svg">
+                            <img src="img/home/section_01/section__el/logos/01.svg">
                             <div class="title-wrapper"><span>per Adulti e Bambini</span></div>
                         </div>
                     </div>
@@ -28,10 +28,10 @@
                 <div class="col-6 col-sm-4 col-lg-3 px-1">
                     <div class="product-wrapper">
                         <div class="image-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/02.png">
+                            <img src="img/home/section_01/section__el/02.png">
                         </div>
                         <div class="detail-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/logos/02.svg">
+                            <img src="img/home/section_01/section__el/logos/02.svg">
                             <div class="title-wrapper"><span>per Adulti e Bambini</span></div>
                         </div>
                     </div>
@@ -39,10 +39,10 @@
                 <div class="col-6 col-sm-4 col-lg-2 px-1">
                     <div class="product-wrapper">
                         <div class="image-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/03.png">
+                            <img src="img/home/section_01/section__el/03.png">
                         </div>
                         <div class="detail-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/logos/03.svg">
+                            <img src="img/home/section_01/section__el/logos/03.svg">
                             <div class="title-wrapper"><span>per Adulti e Bambini</span></div>
                         </div>
                     </div>
@@ -50,10 +50,10 @@
                 <div class="col-6 col-sm-4 col-lg-2 px-1 order-lg-1">
                     <div class="product-wrapper">
                         <div class="image-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/04.png">
+                            <img src="img/home/section_01/section__el/04.png">
                         </div>
                         <div class="detail-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/logos/06.svg">
+                            <img src="img/home/section_01/section__el/logos/06.svg">
                             <div class="title-wrapper"><span>per Adulti e Bambini</span></div>
                         </div>
                     </div>
@@ -61,10 +61,10 @@
                 <div class="col-6 col-sm-4 col-lg-1 px-1 order-lg-1">
                     <div class="product-wrapper">
                         <div class="image-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/05.png">
+                            <img src="img/home/section_01/section__el/05.png">
                         </div>
                         <div class="detail-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/logos/05.svg">
+                            <img src="img/home/section_01/section__el/logos/05.svg">
                             <div class="title-wrapper"><span>per Bambini</span></div>
                         </div>
                     </div>
@@ -72,10 +72,10 @@
                 <div class="col-6 col-sm-4 col-lg-1 px-1">
                     <div class="product-wrapper">
                         <div class="image-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/06.png">
+                            <img src="img/home/section_01/section__el/06.png">
                         </div>
                         <div class="detail-wrapper">
-                            <img src="http://localhost/kotuko_project/img/home/section_01/section__el/logos/04.svg">
+                            <img src="img/home/section_01/section__el/logos/04.svg">
                             <div class="title-wrapper"><span>over 60+</span></div>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                         <div class="title-wrapper">
                             <h2>Un prodotto Menarini, qualità italiana in farmacia</h2>
                         </div>
-                        <div class="image-wrapper"><img src="http://localhost/kotuko_project/img/home/section_02/Logo_MENARINI.png"></div>
+                        <div class="image-wrapper"><img src="img/home/section_02/Logo_MENARINI.png"></div>
                     </div>
                 </div>
             </div>
@@ -144,19 +144,19 @@
             <div class="row">
                 <div class="col col-12 col-lg-4 exercise-block">
                     <div class="title-wrapper">
-                        <h2>Esercizi per il benessere intestinale</h2>
+                        <h2>Esercizi per il<br> benessere<br> intestinale</h2>
                     </div>
                     <div class="button-wrapper"><a href="" class="btn-site btn-white">Leggi i consigli</a></div>
                 </div>
                 <div class="col col-12 col-lg-4 probiotic-block">
                     <div class="title-wrapper">
-                        <h2>Differenze tra probiotici e prebiotici</h2>
+                        <h2>Differenze tra<br> probiotici e<br> prebiotici</h2>
                     </div>
                     <div class="button-wrapper"><a href="" class="btn-site btn-white">Leggi i consigli</a></div>
                 </div>
                 <div class="col col-12 col-lg-4 immune-block">
                     <div class="title-wrapper">
-                        <h2>Come rafforzare il sistema immunitario</h2>
+                        <h2>Come<br> rafforzare il<br> sistema<br> immunitario</h2>
                     </div>
                     <div class="button-wrapper"><a href="" class="btn-site btn-white">Leggi i consigli</a></div>
                 </div>
@@ -178,7 +178,7 @@
                         <div class="button-wrapper"><a href="" class="btn-site btn-white">In farmacia</a></div>
                     </div>
                     <div class="image-wrapper">
-                        <img src="http://localhost/kotuko_project/img/home/section_04/section__el/products.png">
+                        <img src="img/home/section_04/section__el/products.png">
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                         <h2>Servizio clienti</h2>
                     </div>
                     <div class="info-block">
-                        <div class="image-wrapper"><img src="http://localhost/kotuko_project/img/home/section_05/infoline.svg"></div>
+                        <div class="image-wrapper"><img src="img/home/section_05/infoline.svg"></div>
                         <div class="title-wrapper">
                             <h3>Il numero verde è attivo dal <br><span>Lunedì alla Domenica dalle 8:00 alle 22:00</span></h3>
                         </div>
