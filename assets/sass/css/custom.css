@@ -13531,6 +13531,9 @@ textarea.form-control-lg {
     bottom: 0;
     transform: rotate(-90deg); }
 
+html.no-scroll {
+  overflow: hidden; }
+
 body, a {
   font-family: 'Lato';
   font-size: 16px;

@@ -39,6 +39,11 @@ $container-max-widths: (
 
 
 // LAYOUT
+html{
+    &.no-scroll{
+        overflow: hidden;
+    }
+}
 
 body, a{
     font-family: 'Lato';

@@ -71,6 +71,8 @@ $(document).ready(function(){
         // HAMBURGER
         var $hamburger = $(".hamburger");
         $hamburger.on("click", function(e) {
+            $('html').toggleClass('no-scroll');
+
             $hamburger.toggleClass("is-active");
 
             if($('.menu-wrapper .overlay-js').length > 0){
@@ -112,6 +114,8 @@ $(document).ready(function(){
     // MODAL
 
     $(document).on('click', '.modal-section span.close', function(){
+        $('html').removeClass('no-scroll');
+
         $('.modal-section').removeClass('active');
         $('.menu-wrapper .overlay-js').slideUp(); 
         setTimeout(function(){
@@ -211,6 +215,8 @@ $('<div/>', {class: 'modal-section'}).append(
 
 // FUNCTION TO OPEN MODAL
 function openModal(){
+    $('html').addClass('no-scroll');
+
     overlayJS.insertAfter('#footer');
     modalJS.insertAfter('#footer');
 
