@@ -40,14 +40,14 @@ $(document).ready(function(){
                 // console.log($('#header').height());
                 
                 let prevVal = $('#header').height();
-                // console.log(prevVal);
+                //console.log(prevVal);
                 setTimeout(function(){
                     let nextVal = $('#header').height();
-                    // console.log(nextVal);
+                    //console.log(nextVal);
                     if(prevVal !== nextVal){
                         $('.menu-wrapper').css('top', $('#header').height());
                     }
-                }, 300)                
+                }, 400)                
             })
         } else {
             $('.menu-wrapper').css('top', 0);
