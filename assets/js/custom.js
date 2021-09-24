@@ -96,6 +96,15 @@ $(document).ready(function(){
                 $('.menu-wrapper').slideUp();
                 $hamburger.removeClass("is-active");
             }
+
+            if($(this).siblings('.modal-section').length > 0){
+                $('.modal-section').removeClass('active');
+                $('.menu-wrapper .overlay-js').slideUp(); 
+                setTimeout(function(){
+                    $('.modal-section').remove();
+                    $('.overlay-js').remove();
+                }, 300) 
+            }
         })
         
 
